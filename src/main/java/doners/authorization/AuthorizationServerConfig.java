@@ -47,14 +47,14 @@ public class AuthorizationServerConfig {
     public RegisteredClientRepository registeredClientRepository(PasswordEncoder passwordEncoder) {
         RegisteredClient registeredClient =
                 RegisteredClient.withId(UUID.randomUUID().toString())
-                        .clientId("taco-admin-client")
+                        .clientId("doner-admin-client")
                         .clientSecret(passwordEncoder.encode("secret"))
                         .clientAuthenticationMethod(
                                 ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                         .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                         .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
                         .redirectUri(
-                                "http://127.0.0.1:9090/login/oauth2/code/taco-admin-client")
+                                "http://127.0.0.1:9090/login/oauth2/code/doner-admin-client")
                         .scope("writeIngredients")
                         .scope("deleteIngredients")
                         .scope(OidcScopes.OPENID)
