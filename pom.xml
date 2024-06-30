@@ -10,9 +10,9 @@
     </parent>
 
     <groupId>vitaliy.grab</groupId>
-    <artifactId>auth-server</artifactId>
+    <artifactId>doner-cloud-auth-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>auth-server</name>
+    <name>doner-cloud-auth-server</name>
     <description>auth-server</description>
 
     <properties>
